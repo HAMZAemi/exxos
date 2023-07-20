@@ -11,7 +11,7 @@ pipeline {
       stage('Compile and Clean') {
          steps {
            
-            sh "mvn clean install -U "
+            sh "/opt/apache-maven-3.6.3/bin/mvn clean install -U "
          }
       }
       stage('Test') {
