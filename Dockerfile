@@ -1,5 +1,5 @@
-FROM openjdk:8-jdk-alpine
+FROM openjdk:11-jdk
 VOLUME /tmp
 ARG JAR_FILE=target/*.jar
-ADD target/backend-example-0.0.1-SNAPSHOT.jar backend-example-0.0.1-SNAPSHOT.jar
-ENTRYPOINT ["java","-jar","/backend-example-0.0.1-SNAPSHOT.jar"]
+COPY ${JAR_FILE} app.jar
+ENTRYPOINT ["java","-jar","/app.jar"]
