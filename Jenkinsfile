@@ -59,7 +59,7 @@ pipeline {
 
        stage('Deploy') {
     steps {
-        sh "docker run -itd -p 8089:8089 emihamza/hamza:${BUILD_NUMBER}"
+        sh "docker run -itd -p 8089:8080 emihamza/hamza:${BUILD_NUMBER}"
     
 
     }
