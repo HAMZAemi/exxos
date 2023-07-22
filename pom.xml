@@ -56,6 +56,14 @@
     <build>
         <plugins>
             <!-- Spring Boot Maven Plugin for building executable JAR files -->
+		<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<mainClass>com.exosdata.data.backendexample.BackendExampleApplication</mainClass>
+					<layout>JAR</layout>
+				</configuration>
+			</plugin>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
