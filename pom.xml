@@ -5,8 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.5.5</version> <!-- Change to a version compatible with Java 11 -->
-		<relativePath/>
+<version>2.1.7.RELEASE</version>		<relativePath/>
 	</parent>
 	<groupId>com.exosdata.data</groupId>
 	<artifactId>backend-example</artifactId>
